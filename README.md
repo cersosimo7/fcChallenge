@@ -1,18 +1,16 @@
-# Salesforce DX Project: Next Steps
+# Brian Cersosimo - FirstChair Challenge
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+Flow, Classes and LWC are on this repo.
 
-## How Do You Plan to Deploy Your Changes?
+I decided not to create a custom Approval_Status__c field on the Quote object because the standard Status field already covers the necessary approval states. Similarly, instead of adding a custom Total_Amount__c, I used the standard TotalPrice field, which accurately represents the final amount of the quote. This approach helps maintain a clean data model and leverages Salesforce's native functionality.
+The current implementation fulfills the requirements effectively, but there is definitely room for enhancements. For example, the trigger logic could be further modularized and extended for scalability, and a factory pattern could be introduced for the TestSetup.
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+## Flow
 
-## Configure Your Salesforce DX Project
+![image](https://github.com/user-attachments/assets/c7d406f3-c06a-4f94-b67b-c43b1366fda0)
 
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
+## Code Coverage
 
-## Read All About It
+![image](https://github.com/user-attachments/assets/dab8f0ac-3377-4ecf-b623-6c10350bf98c)
 
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+
