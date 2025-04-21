@@ -6,7 +6,9 @@ I decided not to create a custom Approval_Status__c field on the Quote object be
 The current implementation fulfills the requirements effectively, but there is definitely room for enhancements. For example, the trigger logic could be further modularized and extended for scalability, and a factory pattern could be introduced for the TestSetup.
 
 Part 1: https://github.com/cersosimo7/fcChallenge/commit/b39957f6f67b1a6fb58b01f124555a818ee36f0e
+
 Part 2: https://github.com/cersosimo7/fcChallenge/commit/083dcf3f3874eef050524aaa51789a0170b12d85
+
 Bonus: https://github.com/cersosimo7/fcChallenge/commit/a50c802c47ad371792d10ea55330e98740507c99
 
 ## Flow
