@@ -1,0 +1,16 @@
+<messaging:emailTemplate subject="New Quote Ready" recipientType="User" relatedToType="Quote">
+
+    <messaging:plainTextEmailBody >
+        Hello {!recipient.Name},
+        
+        A new quote is pending your approval.
+        
+        Quote Number: {!relatedTo.QuoteNumber}
+        Total Price: {!relatedTo.TotalPrice}
+        Discount: {!relatedTo.Discount}%
+        
+        You can review and approve it at the following link:
+        {!LEFT($Api.Partner_Server_URL_370, FIND(".com/", $Api.Partner_Server_URL_370)+3)}{!relatedTo.Id}
+    </messaging:plainTextEmailBody>
+
+</messaging:emailTemplate>
